@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog',
+    'tinymce',
 ]
 
 MIDDLEWARE = [
@@ -124,3 +125,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Redirect after login
 LOGIN_REDIRECT_URL = '/' 
+
+# Konfigurasi untuk file yang diunggah pengguna
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
